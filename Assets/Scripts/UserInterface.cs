@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class UserInterface : MonoBehaviour {
 
 	private GameObject wrapper;
-	private Text armour, ammo, energy;
+	private Text armour, ammo, energy, health;
 
 	// Use this for initialization
 	void Start () {
@@ -21,6 +21,7 @@ public class UserInterface : MonoBehaviour {
 			if(textElement.name == "Armour") armour = textElement;
 			else if(textElement.name == "Ammo") ammo = textElement;
 			else if(textElement.name == "Energy") energy = textElement;
+			else if(textElement.name == "Health") health = textElement;
 		}
 	}
 
@@ -42,5 +43,6 @@ public class UserInterface : MonoBehaviour {
 		if(armour) armour.text = player.armour + "";
 		if(ammo) ammo.text = player.ammo + "";
 		if(energy) energy.text = player.energy + "";
+		if(health) health.text = player.health + "";
 	}
 }

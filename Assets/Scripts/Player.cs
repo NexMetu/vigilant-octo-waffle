@@ -9,6 +9,7 @@ public class Player : MonoBehaviour {
 	public float bodyRotateSpeed = 1.0f;
 	public float headRotateSpeed = 1.0f;
 
+	public float health = 100;
 	public int armour = 10;
 	public int ammo = 10;
 	public int energy = 10;
@@ -97,8 +98,8 @@ public class Player : MonoBehaviour {
 			Vector3 headAngle = head.transform.rotation.eulerAngles;
 			if(headAngle.x > 355.0f) {
 				headAngle.x = 355.0f;
-			} else if (headAngle.x < 270.0f && headAngle.x > 0.0f) {
-				headAngle.x = 0.0f;
+			} else if (headAngle.x < 270.0f && headAngle.x > 15.0f) {
+				headAngle.x = 15.0f;
 			}
 			head.transform.eulerAngles = headAngle;
 		}
@@ -127,5 +128,10 @@ public class Player : MonoBehaviour {
 			}
 			Destroy(col.gameObject);
 		}
+	}
+
+	public void TakeDamage(int damage) {
+		health -= damage;
+		//TODO: handle health<=0 -> dying / game over
 	}
 }
