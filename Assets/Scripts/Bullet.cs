@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class Bullet : MonoBehaviour {
+	public int bulletspeed;
 
 	public bool knockBack;
 
