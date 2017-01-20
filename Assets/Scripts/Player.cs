@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Player : MonoBehaviour {
 
@@ -14,8 +15,9 @@ public class Player : MonoBehaviour {
 	//Attributes for firing
 	public float coolDownPeriodInSeconds;
 	public float timeStamp;
-	public GameObject bulletPrefab;
-	public Transform bulletSpawn;
+
+	public Transform[] WeaponTypes;
+	public int currentWeapon;
 
 	private GameManager manager;
 	private MechBody body;
@@ -26,32 +28,45 @@ public class Player : MonoBehaviour {
 		manager = Component.FindObjectOfType<GameManager>();
 		body = GetComponentInChildren<MechBody>();
 		head = GetComponentInChildren<MechHead>();
-		timeStamp = Time.time;
+
+		currentWeapon = 0;
 	}
-	
+
+	public void detectPressedKeyOrButton(){
+		foreach(KeyCode k in Enum.GetValues(typeof(KeyCode))){
+			if(Input.GetKeyDown(k)) Debug.Log("KeyCode down: " + k);
+		}
+	}
 	// Update is called once per frame
 	void Update () {
+		detectPressedKeyOrButton ();
+		if (Input.GetKeyDown ("r")) {
+			currentWeapon = (currentWeapon + 1) % WeaponTypes.Length;
+		} else if (Input.GetKeyDown ("t")) {
+			currentWeapon = (currentWeapon + WeaponTypes.Length-1) % WeaponTypes.Length;
+		}
 
 		if(Input.GetMouseButton(0) && timeStamp <= Time.time)
-		{
-			Fire();
-			timeStamp = Time.time + coolDownPeriodInSeconds;
+		{	
+			Debug.Log (WeaponTypes [currentWeapon].GetComponent<Weapons>());
+			WeaponTypes[currentWeapon].GetComponent<Weapons>().Fire();
 		}
 		
 	}
 
-	void Fire()
-	{
-		// Create the Bullet from the Bullet Prefab
-		var bullet = (GameObject)Instantiate(
-			bulletPrefab,
-			bulletSpawn.position,
-			bulletSpawn.rotation);
-		// Add velocity to the bullet
-		bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * bullet.GetComponent<Bullet>().bulletspeed;
-		// Destroy the bullet after 2 seconds
-		Destroy(bullet, 20.0f);        
-	}
+//	void Fire()
+//	{
+//		// Create the Bullet from the Bullet Prefab
+//		var bullet = (GameObject)Instantiate(
+//			bulletPrefab,
+//			bulletSpawn.position,
+//			bulletSpawn.rotation);
+//		// Add velocity to the bullet
+//		bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * bullet.GetComponent<Bullet>().bulletspeed;
+//		// Destroy the bullet after 2 seconds
+//		bullet.transform.Rotate(new Vector3(bullet.transform.rotation.x + 90, bullet.transform.rotation.y, bullet.transform.rotation.z));
+//		Destroy(bullet, 20.0f);        
+//	}
 
 	public void Move(Directions direction) {
 		Vector3 destination = transform.position;
