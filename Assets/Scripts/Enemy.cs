@@ -19,33 +19,47 @@ public class Enemy : MonoBehaviour {
 
 	protected Player target;
 
+	private EnemySpawnPoint spawnPoint;
+	private bool dying = false;
+
 	// Use this for initialization
 	void Start () {
 		target = Component.FindObjectOfType<Player>();
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	protected virtual void Update () {
 		//TODO: add AI logic on moving towards player / attacking them here
 		if(target) {
-			Vector3 destination = GetDestination();
-			destination.y += 1.0f;
-			transform.position = Vector3.MoveTowards(transform.position, destination, Time.deltaTime * speed);
+			transform.position = Vector3.MoveTowards(transform.position, GetDestination(), Time.deltaTime * speed);
+
 			//			if(TargetInRange() && weapon) weapon.Fire(); 
 		}
+//		if(TargetInRange()) Debug.Log("Attack");
 	}
 
 	protected virtual Vector3 GetDestination() {
 		return transform.position;
 	}
 
-	private bool TargetInRange() {
+	protected virtual bool TargetInRange() {
 		if(!target) return false;
-		return Vector3.Distance(transform.position, target.transform.position) < weaponRange;
+		return Vector3.Distance(transform.position, target.transform.position) <= weaponRange;
+	}
+
+	protected void Die() {
+		if(dying) return;
+		dying = true;
+		if(spawnPoint) spawnPoint.EnemyDestroyed();
+		Destroy(gameObject);
+	}
+
+	public void SetSpawnPoint(EnemySpawnPoint spawnPoint) {
+		this.spawnPoint = spawnPoint;
 	}
 
 	public void Damage(int damage) {
 		health -= damage;
-		if(health <= 0) Destroy(gameObject);
+		if(health <= 0) Die();
 	}
 }

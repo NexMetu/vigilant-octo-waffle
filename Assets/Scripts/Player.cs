@@ -51,7 +51,7 @@ public class Player : MonoBehaviour {
 		// Add velocity to the bullet
 		bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * bullet.GetComponent<Bullet>().bulletspeed;
 		// Destroy the bullet after 2 seconds
-		Destroy(bullet, 20.0f);        
+		Destroy(bullet, 2.0f);        
 	}
 
 	public void Move(Directions direction) {

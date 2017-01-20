@@ -6,6 +6,7 @@ public class EnemySpawnPoint : MonoBehaviour {
 
 	public GameObject prefab;
 	public float spawnDelay = 1.0f;
+	public int maxToSpawn = 5;
 
 	public float xOffset = 2.0f;
 	public float yOffset = 2.0f;
@@ -16,6 +17,7 @@ public class EnemySpawnPoint : MonoBehaviour {
 	public float zVariance = 3.0f;
 
 	private float elapsedTime = 0.0f;
+	private int numberSpawned = 0;
 
 	void Update () {
 		elapsedTime += Time.deltaTime;
@@ -26,6 +28,7 @@ public class EnemySpawnPoint : MonoBehaviour {
 	}
 
 	private void SpawnEnemy() {
+		if(numberSpawned >= maxToSpawn) return;
 		Vector3 spawnPosition = transform.position;
 		if(Random.value < 0.5f) {
 			spawnPosition.x = spawnPosition.x + (Random.value * xVariance + xOffset);
@@ -42,6 +45,13 @@ public class EnemySpawnPoint : MonoBehaviour {
 		} else {
 			spawnPosition.z = spawnPosition.z - (Random.value * zVariance + zOffset);
 		}
-		Instantiate(prefab, spawnPosition, transform.rotation);
+		GameObject newObject = Instantiate(prefab, spawnPosition, transform.rotation);
+		Enemy newEnemy = newObject.GetComponent<Enemy>();
+		if(newEnemy) newEnemy.SetSpawnPoint(this);
+		numberSpawned++;
+	}
+
+	public void EnemyDestroyed() {
+		numberSpawned--;
 	}
 }
