@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour {
 	public bool knockBack;
 
 	void OnTriggerEnter(Collision collision){
+		
 		collision.gameObject.GetComponent<Rigidbody> ().velocity = new Vector2 (10000000, 100000000);
 		knockBack = true;
 	}
