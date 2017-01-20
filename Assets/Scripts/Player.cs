@@ -11,6 +11,11 @@ public class Player : MonoBehaviour {
 	public int armour = 10;
 	public int ammo = 10;
 	public int energy = 10;
+	//Attributes for firing
+	public float coolDownPeriodInSeconds;
+	public float timeStamp;
+	public GameObject bulletPrefab;
+	public Transform bulletSpawn;
 
 	private GameManager manager;
 	private MechBody body;
@@ -21,11 +26,32 @@ public class Player : MonoBehaviour {
 		manager = Component.FindObjectOfType<GameManager>();
 		body = GetComponentInChildren<MechBody>();
 		head = GetComponentInChildren<MechHead>();
+		timeStamp = Time.time;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		if(Input.GetMouseButton(0) && timeStamp <= Time.time)
+		{
+			Fire();
+			timeStamp = Time.time + coolDownPeriodInSeconds;
+		}
 		
+	}
+
+	void Fire()
+	{
+		// Create the Bullet from the Bullet Prefab
+		var bullet = (GameObject)Instantiate(
+			bulletPrefab,
+			bulletSpawn.position,
+			bulletSpawn.rotation);
+
+		// Add velocity to the bullet
+		bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 10;
+		// Destroy the bullet after 2 seconds
+		Destroy(bullet, 20.0f);        
 	}
 
 	public void Move(Directions direction) {
