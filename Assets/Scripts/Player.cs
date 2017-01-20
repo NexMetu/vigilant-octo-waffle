@@ -1,0 +1,89 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Player : MonoBehaviour {
+
+	public float speed = 1.0f;
+	public float bodyRotateSpeed = 1.0f;
+	public float headRotateSpeed = 1.0f;
+
+	public int armour = 10;
+	public int ammo = 10;
+	public int energy = 10;
+
+	private GameManager manager;
+	private MechBody body;
+	private MechHead head;
+
+	// Use this for initialization
+	void Start () {
+		manager = Component.FindObjectOfType<GameManager>();
+		body = GetComponentInChildren<MechBody>();
+		head = GetComponentInChildren<MechHead>();
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+
+	public void Move(Directions direction) {
+		Vector3 destination = transform.position;
+		switch(direction) {
+		case Directions.Forward:
+			destination += body.transform.forward;
+			break;
+		case Directions.Backward:
+			destination -= body.transform.forward;
+			break;
+		case Directions.Left:
+			destination -= body.transform.right;
+			break;
+		case Directions.Right:
+			destination += body.transform.right;
+			break;
+		default: break;
+		}
+		transform.position = Vector3.MoveTowards(transform.position, destination, Time.deltaTime * speed);
+	}
+
+	public void RotateHead(Directions direction, float amount) {
+		if(direction == Directions.Horizontal) {
+			head.transform.RotateAround(transform.position, transform.up, Time.deltaTime * headRotateSpeed * amount);
+		}
+		if(direction == Directions.Vertical) {
+			head.transform.RotateAround(head.transform.position, head.transform.right, Time.deltaTime * headRotateSpeed * amount);
+			Vector3 headAngle = head.transform.eulerAngles;
+//			if(headAngle.x > 0.0f) headAngle.x = 0.0f;
+//			if(headAngle.x < -180.0f) headAngle.x = -180.0f;
+			head.transform.eulerAngles = headAngle;
+			Debug.Log("head: " + head.transform.rotation.eulerAngles);
+		}
+	}
+
+	public void RotateBody(Directions direction) {
+		int directionModifier = 1;
+		if(direction == Directions.Left) directionModifier = -1;
+		transform.RotateAround(transform.position, transform.up, Time.deltaTime * bodyRotateSpeed * directionModifier);
+	}
+
+	void OnTriggerEnter(Collider col) {
+		Powerup powerup = col.gameObject.GetComponent<Powerup>();
+		if(powerup) {
+			switch(powerup.type) {
+			case PowerupType.Ammo:
+				ammo += powerup.value;
+				break;
+			case PowerupType.Armour:
+				armour += powerup.value;
+				break;
+			case PowerupType.Energy:
+				energy += powerup.value;
+				break;
+			default: break;
+			}
+			Destroy(col.gameObject);
+		}
+	}
+}
