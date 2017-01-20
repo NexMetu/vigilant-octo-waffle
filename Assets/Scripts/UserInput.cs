@@ -31,6 +31,6 @@ public class UserInput : MonoBehaviour {
 		}
 		//Rotate Head
 		if(player) player.RotateHead(Directions.Horizontal, Input.GetAxis("Mouse X"));
-		if(player) player.RotateHead(Directions.Vertical, Input.GetAxis("Mouse Y"));
+		if(player) player.RotateHead(Directions.Vertical, Input.GetAxis("Mouse Y") * 1.8f);
 	}
 }

@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour {
 			userInterface.Show();
 			userInterface.Refresh(player);
 		}
+		Cursor.visible = false;
 		/**
 		 * TODO: start the actual game
 		 */
@@ -47,12 +48,14 @@ public class GameManager : MonoBehaviour {
 		Time.timeScale = 0.0f;
 		if(menu) menu.ShowPause();
 		if(userInterface) userInterface.Hide();
+		Cursor.visible = true;
 	}
 
 	public void ResumeGame() {
 		Time.timeScale = 1.0f;
 		if(menu) menu.Hide();
 		if(userInterface) userInterface.Show();
+		Cursor.visible = false;
 	}
 
 	public void ExitGame() {
