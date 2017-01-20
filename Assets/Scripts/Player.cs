@@ -47,7 +47,6 @@ public class Player : MonoBehaviour {
 			bulletPrefab,
 			bulletSpawn.position,
 			bulletSpawn.rotation);
-
 		// Add velocity to the bullet
 		bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * bullet.GetComponent<Bullet>().bulletspeed;
 		// Destroy the bullet after 2 seconds
