@@ -54,28 +54,13 @@ public class Player : MonoBehaviour {
 		}
 		if(direction == Directions.Vertical) {
 			head.transform.RotateAround(head.transform.position, head.transform.right, Time.deltaTime * headRotateSpeed * amount);
-			Vector3 headAngle = new Vector3(
-
-//				Mathf.Clamp(head.transform.rotation.eulerAngles.x, 270, 360),
-				head.transform.rotation.eulerAngles.x,
-				head.transform.rotation.eulerAngles.y,
-				head.transform.rotation.eulerAngles.z
-			);
+			Vector3 headAngle = head.transform.rotation.eulerAngles;
 			if(headAngle.x > 355.0f) {
 				headAngle.x = 355.0f;
 			} else if (headAngle.x < 270.0f && headAngle.x > 0.0f) {
 				headAngle.x = 0.0f;
 			}
-//			if(headAngle.x > 0.0f) headAngle.x = 0.0f;
-//			if(headAngle.x < -180.0f) headAngle.x = -180.0f;
 			head.transform.eulerAngles = headAngle;
-			Debug.Log("head angles: " + head.transform.rotation.eulerAngles);
-			Debug.Log("head rotation: " + head.transform.rotation);
-//			transform.rotation.eulerAngles = new Vector3(
-//				Mathf.Clamp(transform.rotation.eulerAngles.x, 0, 180),
-//				transform.rotation.eulerAngles.y,
-//				transform.rotation.eulerAngles.z
-//			);
 		}
 	}
 
