@@ -28,7 +28,7 @@ public class EnemySpawnPoint : MonoBehaviour {
 	}
 
 	private void SpawnEnemy() {
-		if(numberSpawned >= maxToSpawn) return;
+		if(numberSpawned >= maxToSpawn || !prefab) return;
 		Vector3 spawnPosition = transform.position;
 		if(Random.value < 0.5f) {
 			spawnPosition.x = spawnPosition.x + (Random.value * xVariance + xOffset);
