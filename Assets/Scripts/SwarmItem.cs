@@ -11,7 +11,11 @@ public class SwarmItem : Enemy {
 	private float attackStartTime = -1.0f;
 
 	protected override void Update () {
-		if(attacking && Time.time > attackStartTime) base.Update();
+		if(attacking && Time.time > attackStartTime) {
+			AudioSource audioSource = GetComponent<AudioSource>();
+			if(audioSource && !audioSource.isPlaying) audioSource.Play();
+			base.Update();
+		}
 	}
 
 	protected override Vector3 GetDestination() {

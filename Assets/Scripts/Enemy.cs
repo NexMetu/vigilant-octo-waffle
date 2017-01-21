@@ -18,12 +18,14 @@ public class Enemy : MonoBehaviour {
 	public float zVariance = 3.0f;
 
 	protected Player target;
+	protected AudioSource audioSource;
 
 	private EnemySpawnPoint spawnPoint;
 	private bool dying = false;
 
 	protected virtual void Start () {
 		target = Component.FindObjectOfType<Player>();
+		audioSource = GetComponent<AudioSource>();
 	}
 
 	protected virtual void Update () {
