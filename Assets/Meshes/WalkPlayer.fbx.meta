@@ -1,0 +1,538 @@
+fileFormatVersion: 2
+guid: 734eba60cf817e04b91e7ffc29a56eaa
+timeCreated: 1485033512
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: group10
+    100002: group11
+    100004: group8
+    100006: joint1
+    100008: joint14
+    100010: joint15
+    100012: joint16
+    100014: joint17
+    100016: joint18
+    100018: joint19
+    100020: joint2
+    100022: joint20
+    100024: joint21
+    100026: joint22
+    100028: joint23
+    100030: joint24
+    100032: joint25
+    100034: joint26
+    100036: joint28
+    100038: joint3
+    100040: joint4
+    100042: joint5
+    100044: joint5 1
+    100046: joint5 2
+    100048: joint6
+    100050: joint6 1
+    100052: joint6 2
+    100054: joint7
+    100056: joint8
+    100058: nurbsCircle7
+    100060: nurbsCircle8
+    100062: pCube1
+    100064: pCube12
+    100066: pCube15
+    100068: pCube16
+    100070: pCube17
+    100072: pCube2
+    100074: pCube20
+    100076: pCube21
+    100078: pCube22
+    100080: pCube23
+    100082: pCube24
+    100084: pCube25
+    100086: pCube26
+    100088: pCube27
+    100090: pCube4
+    100092: pCube5
+    100094: pCube6
+    100096: pCube7
+    100098: pCube8
+    100100: pCube9
+    100102: pCylinder1
+    100104: pCylinder13
+    100106: pCylinder16
+    100108: pCylinder17
+    100110: pCylinder18
+    100112: pCylinder19
+    100114: pCylinder2
+    100116: pCylinder20
+    100118: pCylinder21
+    100120: pCylinder22
+    100122: pCylinder23
+    100124: pCylinder23 1
+    100126: pCylinder3
+    100128: pCylinder4
+    100130: pCylinder5
+    100132: pCylinder54
+    100134: pCylinder55
+    100136: pCylinder56
+    100138: pCylinder57
+    100140: pCylinder58
+    100142: pCylinder59
+    100144: pCylinder6
+    100146: pCylinder62
+    100148: pCylinder63
+    100150: pCylinder64
+    100152: pCylinder65
+    100154: pCylinder65 1
+    100156: pCylinder66
+    100158: pCylinder67
+    100160: pCylinder68
+    100162: pCylinder69
+    100164: pCylinder70
+    100166: pCylinder71
+    100168: pCylinder72
+    100170: pCylinder73
+    100172: pCylinder74
+    100174: pCylinder75
+    100176: pCylinder76
+    100178: pCylinder77
+    100180: pCylinder78
+    100182: pCylinder79
+    100184: pCylinder79 1
+    100186: pCylinder80
+    100188: pCylinder80 1
+    100190: pCylinder81
+    100192: pCylinder81 1
+    100194: pCylinder82
+    100196: pCylinder82 1
+    100198: pCylinder83
+    100200: pCylinder83 1
+    100202: pCylinder84
+    100204: pCylinder84 1
+    100206: pCylinder85
+    100208: pCylinder85 1
+    100210: pCylinder86
+    100212: pCylinder86 1
+    100214: pCylinder87
+    100216: pCylinder87 1
+    100218: pCylinder88
+    100220: pCylinder88 1
+    100222: polySurface1
+    100224: polySurface2
+    100226: pTorus1
+    100228: pTorus2
+    100230: pTorus4
+    100232: pTorus5
+    100234: transform1
+    100236: transform10
+    100238: transform11
+    100240: transform12
+    100242: transform13
+    100244: transform14
+    100246: transform15
+    100248: transform16
+    100250: transform17
+    100252: transform18
+    100254: transform19
+    100256: transform2
+    100258: transform20
+    100260: transform21
+    100262: transform22
+    100264: transform23
+    100266: transform24
+    100268: transform25
+    100270: transform26
+    100272: transform27
+    100274: transform28
+    100276: transform29
+    100278: transform3
+    100280: transform30
+    100282: transform31
+    100284: transform32
+    100286: transform33
+    100288: transform34
+    100290: transform35
+    100292: transform36
+    100294: transform37
+    100296: transform38
+    100298: transform39
+    100300: transform4
+    100302: transform40
+    100304: transform41
+    100306: transform5
+    100308: transform6
+    100310: transform7
+    100312: transform8
+    100314: transform9
+    100316: //RootNode
+    100318: pCylinder89
+    400000: group10
+    400002: group11
+    400004: group8
+    400006: joint1
+    400008: joint14
+    400010: joint15
+    400012: joint16
+    400014: joint17
+    400016: joint18
+    400018: joint19
+    400020: joint2
+    400022: joint20
+    400024: joint21
+    400026: joint22
+    400028: joint23
+    400030: joint24
+    400032: joint25
+    400034: joint26
+    400036: joint28
+    400038: joint3
+    400040: joint4
+    400042: joint5
+    400044: joint5 1
+    400046: joint5 2
+    400048: joint6
+    400050: joint6 1
+    400052: joint6 2
+    400054: joint7
+    400056: joint8
+    400058: nurbsCircle7
+    400060: nurbsCircle8
+    400062: pCube1
+    400064: pCube12
+    400066: pCube15
+    400068: pCube16
+    400070: pCube17
+    400072: pCube2
+    400074: pCube20
+    400076: pCube21
+    400078: pCube22
+    400080: pCube23
+    400082: pCube24
+    400084: pCube25
+    400086: pCube26
+    400088: pCube27
+    400090: pCube4
+    400092: pCube5
+    400094: pCube6
+    400096: pCube7
+    400098: pCube8
+    400100: pCube9
+    400102: pCylinder1
+    400104: pCylinder13
+    400106: pCylinder16
+    400108: pCylinder17
+    400110: pCylinder18
+    400112: pCylinder19
+    400114: pCylinder2
+    400116: pCylinder20
+    400118: pCylinder21
+    400120: pCylinder22
+    400122: pCylinder23
+    400124: pCylinder23 1
+    400126: pCylinder3
+    400128: pCylinder4
+    400130: pCylinder5
+    400132: pCylinder54
+    400134: pCylinder55
+    400136: pCylinder56
+    400138: pCylinder57
+    400140: pCylinder58
+    400142: pCylinder59
+    400144: pCylinder6
+    400146: pCylinder62
+    400148: pCylinder63
+    400150: pCylinder64
+    400152: pCylinder65
+    400154: pCylinder65 1
+    400156: pCylinder66
+    400158: pCylinder67
+    400160: pCylinder68
+    400162: pCylinder69
+    400164: pCylinder70
+    400166: pCylinder71
+    400168: pCylinder72
+    400170: pCylinder73
+    400172: pCylinder74
+    400174: pCylinder75
+    400176: pCylinder76
+    400178: pCylinder77
+    400180: pCylinder78
+    400182: pCylinder79
+    400184: pCylinder79 1
+    400186: pCylinder80
+    400188: pCylinder80 1
+    400190: pCylinder81
+    400192: pCylinder81 1
+    400194: pCylinder82
+    400196: pCylinder82 1
+    400198: pCylinder83
+    400200: pCylinder83 1
+    400202: pCylinder84
+    400204: pCylinder84 1
+    400206: pCylinder85
+    400208: pCylinder85 1
+    400210: pCylinder86
+    400212: pCylinder86 1
+    400214: pCylinder87
+    400216: pCylinder87 1
+    400218: pCylinder88
+    400220: pCylinder88 1
+    400222: polySurface1
+    400224: polySurface2
+    400226: pTorus1
+    400228: pTorus2
+    400230: pTorus4
+    400232: pTorus5
+    400234: transform1
+    400236: transform10
+    400238: transform11
+    400240: transform12
+    400242: transform13
+    400244: transform14
+    400246: transform15
+    400248: transform16
+    400250: transform17
+    400252: transform18
+    400254: transform19
+    400256: transform2
+    400258: transform20
+    400260: transform21
+    400262: transform22
+    400264: transform23
+    400266: transform24
+    400268: transform25
+    400270: transform26
+    400272: transform27
+    400274: transform28
+    400276: transform29
+    400278: transform3
+    400280: transform30
+    400282: transform31
+    400284: transform32
+    400286: transform33
+    400288: transform34
+    400290: transform35
+    400292: transform36
+    400294: transform37
+    400296: transform38
+    400298: transform39
+    400300: transform4
+    400302: transform40
+    400304: transform41
+    400306: transform5
+    400308: transform6
+    400310: transform7
+    400312: transform8
+    400314: transform9
+    400316: //RootNode
+    400318: pCylinder89
+    2300000: pCube20
+    2300002: pCube21
+    2300004: pCube23
+    2300006: pCube24
+    2300008: pCube25
+    2300010: pCube26
+    2300012: pCube27
+    2300014: pCube4
+    2300016: pCube5
+    2300018: pCube9
+    2300020: pCylinder1
+    2300022: pCylinder2
+    2300024: pCylinder23
+    2300026: pCylinder23 1
+    2300028: pCylinder5
+    2300030: pCylinder62
+    2300032: pCylinder65
+    2300034: pCylinder68
+    2300036: pCylinder69
+    2300038: pCylinder76
+    2300040: pCylinder77
+    2300042: pCylinder78
+    2300044: pCylinder79
+    2300046: pCylinder79 1
+    2300048: pCylinder80
+    2300050: pCylinder80 1
+    2300052: pCylinder81
+    2300054: pCylinder81 1
+    2300056: pCylinder82
+    2300058: pCylinder82 1
+    2300060: pCylinder83
+    2300062: pCylinder83 1
+    2300064: pCylinder84
+    2300066: pCylinder84 1
+    2300068: pCylinder85
+    2300070: pCylinder85 1
+    2300072: pCylinder86
+    2300074: pCylinder86 1
+    2300076: pCylinder87
+    2300078: pCylinder87 1
+    2300080: pCylinder88
+    2300082: pCylinder88 1
+    2300084: polySurface1
+    2300086: polySurface2
+    2300088: pTorus2
+    2300090: pTorus5
+    2300092: pCylinder89
+    3300000: pCube20
+    3300002: pCube21
+    3300004: pCube23
+    3300006: pCube24
+    3300008: pCube25
+    3300010: pCube26
+    3300012: pCube27
+    3300014: pCube4
+    3300016: pCube5
+    3300018: pCube9
+    3300020: pCylinder1
+    3300022: pCylinder2
+    3300024: pCylinder23
+    3300026: pCylinder23 1
+    3300028: pCylinder5
+    3300030: pCylinder62
+    3300032: pCylinder65
+    3300034: pCylinder68
+    3300036: pCylinder69
+    3300038: pCylinder76
+    3300040: pCylinder77
+    3300042: pCylinder78
+    3300044: pCylinder79
+    3300046: pCylinder79 1
+    3300048: pCylinder80
+    3300050: pCylinder80 1
+    3300052: pCylinder81
+    3300054: pCylinder81 1
+    3300056: pCylinder82
+    3300058: pCylinder82 1
+    3300060: pCylinder83
+    3300062: pCylinder83 1
+    3300064: pCylinder84
+    3300066: pCylinder84 1
+    3300068: pCylinder85
+    3300070: pCylinder85 1
+    3300072: pCylinder86
+    3300074: pCylinder86 1
+    3300076: pCylinder87
+    3300078: pCylinder87 1
+    3300080: pCylinder88
+    3300082: pCylinder88 1
+    3300084: polySurface1
+    3300086: polySurface2
+    3300088: pTorus2
+    3300090: pTorus5
+    3300092: pCylinder89
+    4300000: pCube5
+    4300002: pCylinder62
+    4300004: pCylinder1
+    4300006: pCube21
+    4300008: pCube20
+    4300010: pCube9
+    4300012: pCylinder68
+    4300014: pCylinder69
+    4300016: pCube4
+    4300018: pCylinder5
+    4300020: pCube23
+    4300022: pCube24
+    4300024: pCube25
+    4300026: pCube26
+    4300028: pCylinder76
+    4300030: pCube27
+    4300032: polySurface2
+    4300034: polySurface1
+    4300036: pCylinder77
+    4300038: pCylinder78
+    4300040: pCylinder82
+    4300042: pCylinder83
+    4300044: pCylinder88
+    4300046: pCylinder87
+    4300048: pCylinder79
+    4300050: pCylinder85
+    4300052: pCylinder86
+    4300054: pCylinder80
+    4300056: pCylinder81
+    4300058: pCylinder23
+    4300060: pCylinder84
+    4300062: pCylinder82
+    4300064: pCylinder83
+    4300066: pCylinder88
+    4300068: pCylinder87
+    4300070: pCylinder79
+    4300072: pCylinder85
+    4300074: pCylinder86
+    4300076: pCylinder80
+    4300078: pCylinder81
+    4300080: pCylinder23
+    4300082: pCylinder84
+    4300084: pCylinder2
+    4300086: pTorus2
+    4300088: pTorus5
+    4300090: pCylinder65
+    4300092: pCylinder89
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
