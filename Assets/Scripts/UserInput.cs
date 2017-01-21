@@ -29,8 +29,12 @@ public class UserInput : MonoBehaviour {
 		} else if(Input.GetKey(KeyCode.E)) {
 			if(player) player.RotateBody(Directions.Right);
 		}
-		//Rotate Head
+		// Rotate Head
 		if(player) player.RotateHead(Directions.Horizontal, Input.GetAxis("Mouse X"));
 		if(player) player.RotateHead(Directions.Vertical, Input.GetAxis("Mouse Y") * 1.8f);
+		// Weapon Control
+		if(Input.GetMouseButtonDown(0)) player.StartAttack();
+		else if(Input.GetMouseButtonUp(0)) player.StopAttack();
+		if(Input.GetMouseButtonDown(1)) player.SwitchWeapon();
 	}
 }

@@ -21,37 +21,30 @@ public class Player : MonoBehaviour {
 	private GameManager manager;
 	private MechBody body;
 	private MechHead head;
+	private SonicWeapon weapon;
 
-	// Use this for initialization
 	void Start () {
 		manager = Component.FindObjectOfType<GameManager>();
 		body = GetComponentInChildren<MechBody>();
 		head = GetComponentInChildren<MechHead>();
+		weapon = GetComponentInChildren<SonicWeapon>();
 		timeStamp = Time.time;
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
-		if(Input.GetMouseButton(0) && timeStamp <= Time.time)
-		{
-			Fire();
-			timeStamp = Time.time + coolDownPeriodInSeconds;
-		}
+	void Update () {
 		
 	}
 
-	void Fire()
-	{
-		// Create the Bullet from the Bullet Prefab
-		var bullet = (GameObject)Instantiate(
-			bulletPrefab,
-			bulletSpawn.position,
-			bulletSpawn.rotation);
-		// Add velocity to the bullet
-		bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * bullet.GetComponent<Bullet>().bulletspeed;
-		// Destroy the bullet after 2 seconds
-		Destroy(bullet, 2.0f);        
+	public void StartAttack() {
+		if(weapon) weapon.StartFiring();
+	}
+
+	public void StopAttack() {
+		if(weapon) weapon.StopFiring();
+	}
+
+	public void SwitchWeapon() {
+		if(weapon) weapon.staticLength = !weapon.staticLength;
 	}
 
 	public void Move(Directions direction) {

@@ -38,7 +38,6 @@ public class SwarmItem : Enemy {
 	}
 
 	public void InitiateAttack(float attackDelay) {
-		Debug.Log("Delay: " + attackDelay);
 		attacking = true;
 		attackStartTime = Time.time + attackDelay;
 	}

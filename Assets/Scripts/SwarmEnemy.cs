@@ -7,7 +7,7 @@ public class SwarmEnemy : Enemy {
 	public float rotateSpeed = 5.0f;
 
 	private float baseSpeed = 5.0f;
-	private bool updatedSpeed = false, isRotating = true, madeAttack = false;
+	private bool updatedSpeed = false, madeAttack = false;
 	private Vector3 actualDestination;
 
 	private SwarmItem[] items;
