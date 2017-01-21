@@ -46,8 +46,9 @@ public class SwarmEnemy : Enemy {
 		if(madeAttack) return;
 		base.Attack ();
 		foreach(SwarmItem item in items) {
-			item.InitiateAttack(Random.value * 0.5f);
+			item.InitiateAttack(Random.value * 1.2f);
 		}
+		if(audioSource) audioSource.Stop();
 		madeAttack = true;
 	}
 
