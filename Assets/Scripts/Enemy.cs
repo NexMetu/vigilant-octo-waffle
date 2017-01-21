@@ -22,19 +22,12 @@ public class Enemy : MonoBehaviour {
 	private EnemySpawnPoint spawnPoint;
 	private bool dying = false;
 
-	// Use this for initialization
 	protected virtual void Start () {
 		target = Component.FindObjectOfType<Player>();
 	}
-	
-	// Update is called once per frame
-	protected virtual void Update () {
-		//TODO: add AI logic on moving towards player / attacking them here
-		if(target) {
-			transform.position = Vector3.MoveTowards(transform.position, GetDestination(), Time.deltaTime * speed);
 
-			//			if(TargetInRange() && weapon) weapon.Fire(); 
-		}
+	protected virtual void Update () {
+		if(target) transform.position = Vector3.MoveTowards(transform.position, GetDestination(), Time.deltaTime * speed); 
 		if(TargetInRange()) Attack();
 	}
 
