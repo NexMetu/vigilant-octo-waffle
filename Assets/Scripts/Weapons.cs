@@ -16,12 +16,12 @@ public class Weapons : MonoBehaviour {
 		timeStamp = Time.time;
 	}
 
-	public void Fire()
+	public void Fire(Vector3 position)
 	{
 		// Create the Bullet from the Bullet Prefab
 		var bullet = (GameObject)Instantiate(
 			bulletPrefab,
-			bulletSpawn.position,
+			position,
 			bulletPrefab.transform.rotation);
 		// Add velocity to the bullet
 		//bullet.GetComponent<Rigidbody>().rigidbody.AddForce(Vector3.forward * Time.deltaTime * speed);

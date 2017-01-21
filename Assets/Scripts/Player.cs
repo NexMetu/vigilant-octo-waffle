@@ -19,6 +19,7 @@ public class Player : MonoBehaviour {
 
 	public Transform[] WeaponTypes;
 	public int currentWeapon;
+	public Transform bulletSpawner;
 
 	private GameManager manager;
 	private MechBody body;
@@ -29,7 +30,7 @@ public class Player : MonoBehaviour {
 		manager = Component.FindObjectOfType<GameManager>();
 		body = GetComponentInChildren<MechBody>();
 		head = GetComponentInChildren<MechHead>();
-
+		timeStamp = Time.time;
 		currentWeapon = 0;
 	}
 
@@ -50,7 +51,9 @@ public class Player : MonoBehaviour {
 		if(Input.GetMouseButton(0) && timeStamp <= Time.time)
 		{	
 			Debug.Log (WeaponTypes [currentWeapon].GetComponent<Weapons>());
-			WeaponTypes[currentWeapon].GetComponent<Weapons>().Fire();
+			Debug.Log (bulletSpawner.position);
+			WeaponTypes[currentWeapon].GetComponent<Weapons>().Fire(bulletSpawner.position);
+			timeStamp = timeStamp + WeaponTypes [currentWeapon].GetComponent<Weapons> ().coolDownPeriodInSeconds;
 		}
 		
 	}
