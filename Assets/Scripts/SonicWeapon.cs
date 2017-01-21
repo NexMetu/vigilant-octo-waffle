@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class SonicWeapon : MonoBehaviour {
 
+	public int damage = 1;
 	public float maxSize = 2.0f;
 	public float shotSpeed;
 	public bool staticLength = false;
 	public Color baseColor = Color.red;
 	public AudioClip staticClip, expandingClip;
+	public float beamResetOffset = 0.1f;
 
 	private bool animating = false, extending = true;
 	private AudioSource audioSource;
+	private SonicCollider sonicCollider;
+	private Player myPlayer;
+	private Enemy myEnemy;
+	private float nextBeamReset;
 
 	void Start () {
 		foreach(Transform child in transform) {
@@ -21,10 +27,19 @@ public class SonicWeapon : MonoBehaviour {
 			renderer.color = baseColor;
 		}
 		audioSource = GetComponent<AudioSource>();
+		sonicCollider = GetComponentInChildren<SonicCollider>();
+		myPlayer = GetComponentInParent<Player>();
+		myEnemy = GetComponentInParent<Enemy>();
 	}
 
 	void Update () {
 		if(animating) {
+			if(staticLength) {
+				if(Time.time > nextBeamReset) {
+					sonicCollider.StartDetecting();
+					nextBeamReset = Time.time + beamResetOffset;
+				}
+			}
 			if(extending) {
 				foreach(Transform child in transform) {
 					child.localScale += new Vector3 (shotSpeed / 100.0f, 0.0f, 0.0f);
@@ -54,6 +69,10 @@ public class SonicWeapon : MonoBehaviour {
 		}
 		animating = true;
 		extending = true;
+		if(sonicCollider) {
+			sonicCollider.StartDetecting();
+			nextBeamReset = Time.time + beamResetOffset;
+		}
 	}
 
 	public void StopFiring() {
@@ -64,5 +83,14 @@ public class SonicWeapon : MonoBehaviour {
 		}
 		animating = false;
 		extending = true;
+		if(sonicCollider) sonicCollider.StopDetecting();
+	}
+
+	public void HitPlayer(Player player) {
+		player.TakeDamage(damage);
+	}
+
+	public void HitEnemy(Enemy enemy) {
+		enemy.Damage(damage);
 	}
 }
