@@ -4,46 +4,70 @@ using UnityEngine;
 
 public class SonicShoot : MonoBehaviour {
 
+	public float maxSize = 2.0f;
 	public float shotSpeed;
 
+	private int maxIterations = 40;
+	private int iteration = 0;
 
-	// Use this for initialization
+	private bool animating = false, extending = true;
+
 	void Start () {
-
 		this.transform.localScale = new Vector3 (0, 0.3f, 1);
-
-
 	}
 
-	// Update is called once per frame
 	void Update () {
-
-
-		// Chords ////////////////////////
-		if (Input.GetKey (KeyCode.Y)) {
-			Debug.Log ("Chord I");
-			ChordPressed (0);
-		} else if (Input.GetKeyUp (KeyCode.Y)) {
-			this.transform.localScale = new Vector3 (0, 0.3f, 1);
+		if(animating) {
+			if(extending) {
+				transform.localScale += new Vector3 (shotSpeed / 100.0f, 0, 0);
+				if(transform.localScale.x >= maxSize) {
+					Vector3 temp = transform.localScale;
+					temp.x = maxSize;
+					transform.localScale = temp;
+					extending = false;
+				}
+			} else {
+				transform.localScale -= new Vector3 (shotSpeed / 100.0f, 0, 0);
+				if(transform.localScale.x <= 0.0f) {
+					Vector3 temp = transform.localScale;
+					temp.x = 0.0f;
+					transform.localScale = temp;
+					animating = false;
+					extending = true;
+				}
+			}
 		}
 
 
-
-
+//		if(animating) {
+//			if(extending) {
+//				if(iteration == maxIterations) {
+//					extending = false;
+//				} else {
+//					transform.localScale += new Vector3 (shotSpeed, 0, 0);
+//					iteration++;
+//				}
+//			} else {
+//				if(iteration == 0) {
+//					animating = false;
+//					extending = true;
+//				} else {
+//					transform.localScale -= new Vector3 (shotSpeed, 0, 0);
+//					iteration--;
+//				}
+//			}
+		 else {
+			if(Input.GetKeyDown(KeyCode.Y)) {
+				animating = true;
+			}
+		}
 	}
 
 	private void ChordPressed(int chord) {
-
 		switch(chord)
 		{
 		case 0:
 			this.transform.localScale += new Vector3 (shotSpeed, 0, 0);
-			break;
-		case 1:
-			//Chord_ii.transform.localScale += new Vector3 (shotSpeed, 0, 0);
-			break;
-		case 2:
-			//Chord_iii.transform.localScale += new Vector3 (shotSpeed, 0, 0);
 			break;
 		default:
 			break;
