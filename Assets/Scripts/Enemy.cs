@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour {
 	private bool dying = false;
 
 	// Use this for initialization
-	void Start () {
+	protected virtual void Start () {
 		target = Component.FindObjectOfType<Player>();
 	}
 	
@@ -35,7 +35,7 @@ public class Enemy : MonoBehaviour {
 
 			//			if(TargetInRange() && weapon) weapon.Fire(); 
 		}
-//		if(TargetInRange()) Debug.Log("Attack");
+		if(TargetInRange()) Attack();
 	}
 
 	protected virtual Vector3 GetDestination() {
@@ -45,6 +45,10 @@ public class Enemy : MonoBehaviour {
 	protected virtual bool TargetInRange() {
 		if(!target) return false;
 		return Vector3.Distance(transform.position, target.transform.position) <= weaponRange;
+	}
+
+	protected virtual void Attack() {
+		//nothing by default
 	}
 
 	protected void Die() {

@@ -7,7 +7,15 @@ public class SwarmEnemy : Enemy {
 	public float rotateSpeed = 5.0f;
 
 	private float baseSpeed = 5.0f;
-	private bool updatedSpeed = false;
+	private bool updatedSpeed = false, isRotating = true, madeAttack = false;
+	private Vector3 actualDestination;
+
+	private SwarmItem[] items;
+
+	protected override void Start() {
+		items = GetComponentsInChildren<SwarmItem>();
+		base.Start();
+	}
 
 	protected override void Update () {
 		base.Update ();
@@ -21,42 +29,26 @@ public class SwarmEnemy : Enemy {
 		} else updatedSpeed = false;
 
 		transform.RotateAround(transform.position, transform.up, Time.deltaTime * baseSpeed * rotateSpeed);
-//		transform.RotateAround(transform.position, transform.right, Time.deltaTime * rotateSpeed);
-//		transform.RotateAround(transform.position, transform.forward, Time.deltaTime * rotateSpeed);
 	}
 
-//	private Vector3 originalDestination = new Vector3(-9999, -9999, -9999), adjustedDestination;
-//
-//	protected  override Vector3 GetDestination() {
-//		Vector3 destination = target.transform.position;
-//		if(destination == originalDestination) return adjustedDestination;
-//		originalDestination = destination;
-//		adjustedDestination = destination;
-//		if(Random.value < 0.5f) {
-//			adjustedDestination.x = adjustedDestination.x + (Random.value * xVariance + xOffset);
-//		} else {
-//			adjustedDestination.x = adjustedDestination.x - (Random.value * xVariance + xOffset);
-//		}
-//		if(Random.value < 0.5f) {
-//			adjustedDestination.y = adjustedDestination.y + (Random.value * yVariance + yOffset);
-//		} else {
-//			adjustedDestination.y = adjustedDestination.y - (Random.value * yVariance + yOffset);
-//		}
-//		if(Random.value < 0.5f) {
-//			adjustedDestination.z = adjustedDestination.z + (Random.value * zVariance + zOffset);
-//		} else {
-//			adjustedDestination.z = adjustedDestination.z - (Random.value * zVariance + zOffset);
-//		}
-//		return adjustedDestination;
-//	}
-//
-//	void OnCollisionEnter(Collision collision){
-//		Player player = collision.gameObject.GetComponentInParent<Player>();
-//		if(player) {
-//			//TODO: spawn explosion
-//			player.TakeDamage(weaponDamage);
-//			Die();
-//		}
-//	}
+	protected override Vector3 GetDestination () {
+		actualDestination = target.transform.position;
+		actualDestination.y = transform.position.y;
+		return actualDestination;
+	}
+
+	protected override bool TargetInRange () {
+		if(target && transform.position == actualDestination) return true;
+		return false;
+	}
+
+	protected override void Attack () {
+		if(madeAttack) return;
+		base.Attack ();
+		foreach(SwarmItem item in items) {
+			item.InitiateAttack(Random.value * 0.5f);
+		}
+		madeAttack = true;
+	}
 
 }
