@@ -58,6 +58,11 @@ public class GameManager : MonoBehaviour {
 		Cursor.visible = false;
 	}
 
+	public void GameOver(bool success) {
+		Debug.Log("GAME OVER: " + success);
+		//show relevant screen
+	}
+
 	public void ExitGame() {
 		#if UNITY_EDITOR
 		UnityEditor.EditorApplication.isPlaying = false;

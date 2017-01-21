@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour {
 
@@ -17,18 +18,29 @@ public class Enemy : MonoBehaviour {
 	public float yVariance = 3.0f;
 	public float zVariance = 3.0f;
 
+	public AudioClip loop, death;
+
 	protected Player target;
 	protected AudioSource audioSource;
 
 	private EnemySpawnPoint spawnPoint;
 	private bool dying = false;
+	private Text hpCounter;
 
 	protected virtual void Start () {
 		target = Component.FindObjectOfType<Player>();
 		audioSource = GetComponent<AudioSource>();
+		if(audioSource) {
+			audioSource.clip = loop;
+			audioSource.loop = true;
+			audioSource.Play();
+		}
+		hpCounter = GetComponentInChildren<Text>();
 	}
 
 	protected virtual void Update () {
+		if(hpCounter) hpCounter.text = health + "";
+		if(dying) return;
 		if(target) transform.position = Vector3.MoveTowards(transform.position, GetDestination(), Time.deltaTime * speed); 
 		if(TargetInRange()) Attack();
 	}
@@ -50,7 +62,32 @@ public class Enemy : MonoBehaviour {
 		if(dying) return;
 		dying = true;
 		if(spawnPoint) spawnPoint.EnemyDestroyed();
+		PreDestruction();
+		if(PlayDeathRattle()) StartCoroutine(DeathSequence());
+		else Destruction();
+	}
+
+	protected virtual void PreDestruction() {
+		//do nothing
+	}
+
+	private IEnumerator DeathSequence() {
+		if(audioSource) {
+			audioSource.Stop();
+			audioSource.clip = death;
+			audioSource.loop = false;
+			audioSource.Play();
+		}
+		yield return new WaitForSeconds(death.length);
+		Destruction();
+	}
+
+	protected virtual void Destruction() {
 		Destroy(gameObject);
+	}
+
+	protected virtual bool PlayDeathRattle() {
+		return true;
 	}
 
 	public void SetSpawnPoint(EnemySpawnPoint spawnPoint) {

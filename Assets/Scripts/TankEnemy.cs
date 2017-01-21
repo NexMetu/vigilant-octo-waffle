@@ -37,4 +37,23 @@ public class TankEnemy : Enemy {
 		}
 	}
 
+	protected override void Destruction () {
+		//don't destroy, drop from the sky instead
+		Rigidbody rigidbody = gameObject.GetComponent<Rigidbody>();
+		if(rigidbody) {
+			rigidbody.useGravity = true;
+			rigidbody.isKinematic = false;
+		}
+//		StartCoroutine(ResetRigidbody());
+	}
+
+	private IEnumerator ResetRigidbody() {
+		yield return new WaitForSeconds(3.0f);
+		Rigidbody rigidbody = gameObject.GetComponent<Rigidbody>();
+		if(rigidbody) {
+			rigidbody.useGravity = false;
+			rigidbody.isKinematic = true;
+		}
+	}
+
 }

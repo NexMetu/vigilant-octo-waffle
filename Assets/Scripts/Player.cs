@@ -89,9 +89,30 @@ public class Player : MonoBehaviour {
 		transform.RotateAround(transform.position, transform.up, Time.deltaTime * bodyRotateSpeed * directionModifier);
 	}
 
-	void OnTriggerEnter(Collider col) {
-		Powerup powerup = col.gameObject.GetComponent<Powerup>();
+//	void OnTriggerEnter(Collider col) {
+//		Powerup powerup = col.gameObject.GetComponent<Powerup>();
+//		if(powerup) {
+//			Debug.Log("trigger powerup");
+//			switch(powerup.type) {
+//			case PowerupType.Ammo:
+//				ammo += powerup.value;
+//				break;
+//			case PowerupType.Armour:
+//				armour += powerup.value;
+//				break;
+//			case PowerupType.Energy:
+//				energy += powerup.value;
+//				break;
+//			default: break;
+//			}
+//			Destroy(col.gameObject);
+//		}
+//	}
+
+	void OnCollisionEnter(Collision collision) {
+		Powerup powerup = collision.gameObject.GetComponent<Powerup>();
 		if(powerup) {
+			Debug.Log("collide powerup");
 			switch(powerup.type) {
 			case PowerupType.Ammo:
 				ammo += powerup.value;
@@ -104,12 +125,16 @@ public class Player : MonoBehaviour {
 				break;
 			default: break;
 			}
-			Destroy(col.gameObject);
+			Destroy(collision.gameObject);
 		}
 	}
 
 	public void TakeDamage(int damage) {
 		health -= damage;
 		//TODO: handle health<=0 -> dying / game over
+	}
+
+	public bool IsDead() {
+		return health <= 0;
 	}
 }

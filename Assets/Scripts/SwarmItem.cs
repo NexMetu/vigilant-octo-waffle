@@ -13,7 +13,11 @@ public class SwarmItem : Enemy {
 	protected override void Update () {
 		if(attacking && Time.time > attackStartTime) {
 			AudioSource audioSource = GetComponent<AudioSource>();
-			if(audioSource && !audioSource.isPlaying) audioSource.Play();
+			if(audioSource && !audioSource.isPlaying) {
+				audioSource.clip = death;
+				audioSource.loop = false;
+				audioSource.Play();
+			}
 			base.Update();
 		}
 	}
@@ -52,6 +56,18 @@ public class SwarmItem : Enemy {
 			//TODO: spawn explosion
 			player.TakeDamage(weaponDamage);
 			Die();
+		}
+	}
+
+	protected override bool PlayDeathRattle () {
+		//already played if attacking
+		return !attacking;
+	}
+
+	protected override void PreDestruction () {
+		base.PreDestruction ();
+		foreach(Renderer renderer in GetComponentsInChildren<Renderer>()) {
+			renderer.enabled = false;
 		}
 	}
 }

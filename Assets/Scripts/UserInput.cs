@@ -11,6 +11,7 @@ public class UserInput : MonoBehaviour {
 	}
 
 	void Update () {
+		if(player.IsDead()) return;
 		// Move Forward / Back
 		if(Input.GetKey(KeyCode.W)) {
 			if(player) player.Move(Directions.Forward);

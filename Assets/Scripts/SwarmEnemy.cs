@@ -52,4 +52,8 @@ public class SwarmEnemy : Enemy {
 		madeAttack = true;
 	}
 
+	protected override bool PlayDeathRattle () {
+		return false;
+	}
+
 }
