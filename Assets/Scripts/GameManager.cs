@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour {
 		player = Component.FindObjectOfType<Player>();
 		menu = Component.FindObjectOfType<Menu>();
 		userInterface = Component.FindObjectOfType<UserInterface>();
+		//Scene scene = SceneManager.GetActiveScene ();
 		if(userInterface) userInterface.Hide();
 	}
 
@@ -33,6 +35,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void LaunchGame() {
+
 		if(menu) menu.Hide();
 		if(userInterface) {
 			userInterface.Show();
