@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 734eba60cf817e04b91e7ffc29a56eaa
-timeCreated: 1485033512
+timeCreated: 1485046458
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -62,109 +62,105 @@ ModelImporter:
     100108: pCylinder17
     100110: pCylinder18
     100112: pCylinder19
-    100114: pCylinder2
-    100116: pCylinder20
-    100118: pCylinder21
-    100120: pCylinder22
-    100122: pCylinder23
-    100124: pCylinder23 1
-    100126: pCylinder3
-    100128: pCylinder4
-    100130: pCylinder5
-    100132: pCylinder54
-    100134: pCylinder55
-    100136: pCylinder56
-    100138: pCylinder57
-    100140: pCylinder58
-    100142: pCylinder59
-    100144: pCylinder6
-    100146: pCylinder62
-    100148: pCylinder63
-    100150: pCylinder64
-    100152: pCylinder65
-    100154: pCylinder65 1
-    100156: pCylinder66
-    100158: pCylinder67
-    100160: pCylinder68
-    100162: pCylinder69
-    100164: pCylinder70
-    100166: pCylinder71
-    100168: pCylinder72
-    100170: pCylinder73
-    100172: pCylinder74
-    100174: pCylinder75
-    100176: pCylinder76
-    100178: pCylinder77
-    100180: pCylinder78
-    100182: pCylinder79
-    100184: pCylinder79 1
-    100186: pCylinder80
-    100188: pCylinder80 1
-    100190: pCylinder81
-    100192: pCylinder81 1
-    100194: pCylinder82
-    100196: pCylinder82 1
-    100198: pCylinder83
-    100200: pCylinder83 1
-    100202: pCylinder84
-    100204: pCylinder84 1
-    100206: pCylinder85
-    100208: pCylinder85 1
-    100210: pCylinder86
-    100212: pCylinder86 1
-    100214: pCylinder87
-    100216: pCylinder87 1
-    100218: pCylinder88
-    100220: pCylinder88 1
-    100222: polySurface1
-    100224: polySurface2
-    100226: pTorus1
-    100228: pTorus2
-    100230: pTorus4
-    100232: pTorus5
-    100234: transform1
-    100236: transform10
-    100238: transform11
-    100240: transform12
-    100242: transform13
-    100244: transform14
-    100246: transform15
-    100248: transform16
-    100250: transform17
-    100252: transform18
-    100254: transform19
-    100256: transform2
-    100258: transform20
-    100260: transform21
-    100262: transform22
-    100264: transform23
-    100266: transform24
-    100268: transform25
-    100270: transform26
-    100272: transform27
-    100274: transform28
-    100276: transform29
-    100278: transform3
-    100280: transform30
-    100282: transform31
-    100284: transform32
-    100286: transform33
-    100288: transform34
-    100290: transform35
-    100292: transform36
-    100294: transform37
-    100296: transform38
-    100298: transform39
-    100300: transform4
-    100302: transform40
-    100304: transform41
-    100306: transform5
-    100308: transform6
-    100310: transform7
-    100312: transform8
-    100314: transform9
-    100316: //RootNode
-    100318: pCylinder89
+    100114: pCylinder20
+    100116: pCylinder21
+    100118: pCylinder22
+    100120: pCylinder23
+    100122: pCylinder23 1
+    100124: pCylinder3
+    100126: pCylinder4
+    100128: pCylinder5
+    100130: pCylinder54
+    100132: pCylinder55
+    100134: pCylinder56
+    100136: pCylinder57
+    100138: pCylinder58
+    100140: pCylinder59
+    100142: pCylinder6
+    100144: pCylinder62
+    100146: pCylinder63
+    100148: pCylinder64
+    100150: pCylinder65
+    100152: pCylinder66
+    100154: pCylinder67
+    100156: pCylinder68
+    100158: pCylinder69
+    100160: pCylinder70
+    100162: pCylinder71
+    100164: pCylinder72
+    100166: pCylinder73
+    100168: pCylinder74
+    100170: pCylinder75
+    100172: pCylinder76
+    100174: pCylinder77
+    100176: pCylinder78
+    100178: pCylinder79
+    100180: pCylinder79 1
+    100182: pCylinder80
+    100184: pCylinder80 1
+    100186: pCylinder81
+    100188: pCylinder81 1
+    100190: pCylinder82
+    100192: pCylinder82 1
+    100194: pCylinder83
+    100196: pCylinder83 1
+    100198: pCylinder84
+    100200: pCylinder84 1
+    100202: pCylinder85
+    100204: pCylinder85 1
+    100206: pCylinder86
+    100208: pCylinder86 1
+    100210: pCylinder87
+    100212: pCylinder87 1
+    100214: pCylinder88
+    100216: pCylinder88 1
+    100218: pCylinder89
+    100220: polySurface1
+    100222: polySurface2
+    100224: pTorus1
+    100226: pTorus4
+    100228: transform1
+    100230: transform10
+    100232: transform11
+    100234: transform12
+    100236: transform13
+    100238: transform14
+    100240: transform15
+    100242: transform16
+    100244: transform17
+    100246: transform18
+    100248: transform19
+    100250: transform2
+    100252: transform20
+    100254: transform21
+    100256: transform22
+    100258: transform23
+    100260: transform24
+    100262: transform25
+    100264: transform26
+    100266: transform27
+    100268: transform28
+    100270: transform29
+    100272: transform3
+    100274: transform30
+    100276: transform31
+    100278: transform32
+    100280: transform33
+    100282: transform34
+    100284: transform35
+    100286: transform36
+    100288: transform37
+    100290: transform38
+    100292: transform39
+    100294: transform4
+    100296: transform40
+    100298: transform41
+    100300: transform5
+    100302: transform6
+    100304: transform7
+    100306: transform8
+    100308: transform9
+    100310: //RootNode
     400000: group10
     400002: group11
     400004: group8
@@ -222,203 +218,105 @@ ModelImporter:
     400108: pCylinder17
     400110: pCylinder18
     400112: pCylinder19
-    400114: pCylinder2
-    400116: pCylinder20
-    400118: pCylinder21
-    400120: pCylinder22
-    400122: pCylinder23
-    400124: pCylinder23 1
-    400126: pCylinder3
-    400128: pCylinder4
-    400130: pCylinder5
-    400132: pCylinder54
-    400134: pCylinder55
-    400136: pCylinder56
-    400138: pCylinder57
-    400140: pCylinder58
-    400142: pCylinder59
-    400144: pCylinder6
-    400146: pCylinder62
-    400148: pCylinder63
-    400150: pCylinder64
-    400152: pCylinder65
-    400154: pCylinder65 1
-    400156: pCylinder66
-    400158: pCylinder67
-    400160: pCylinder68
-    400162: pCylinder69
-    400164: pCylinder70
-    400166: pCylinder71
-    400168: pCylinder72
-    400170: pCylinder73
-    400172: pCylinder74
-    400174: pCylinder75
-    400176: pCylinder76
-    400178: pCylinder77
-    400180: pCylinder78
-    400182: pCylinder79
-    400184: pCylinder79 1
-    400186: pCylinder80
-    400188: pCylinder80 1
-    400190: pCylinder81
-    400192: pCylinder81 1
-    400194: pCylinder82
-    400196: pCylinder82 1
-    400198: pCylinder83
-    400200: pCylinder83 1
-    400202: pCylinder84
-    400204: pCylinder84 1
-    400206: pCylinder85
-    400208: pCylinder85 1
-    400210: pCylinder86
-    400212: pCylinder86 1
-    400214: pCylinder87
-    400216: pCylinder87 1
-    400218: pCylinder88
-    400220: pCylinder88 1
-    400222: polySurface1
-    400224: polySurface2
-    400226: pTorus1
-    400228: pTorus2
-    400230: pTorus4
-    400232: pTorus5
-    400234: transform1
-    400236: transform10
-    400238: transform11
-    400240: transform12
-    400242: transform13
-    400244: transform14
-    400246: transform15
-    400248: transform16
-    400250: transform17
-    400252: transform18
-    400254: transform19
-    400256: transform2
-    400258: transform20
-    400260: transform21
-    400262: transform22
-    400264: transform23
-    400266: transform24
-    400268: transform25
-    400270: transform26
-    400272: transform27
-    400274: transform28
-    400276: transform29
-    400278: transform3
-    400280: transform30
-    400282: transform31
-    400284: transform32
-    400286: transform33
-    400288: transform34
-    400290: transform35
-    400292: transform36
-    400294: transform37
-    400296: transform38
-    400298: transform39
-    400300: transform4
-    400302: transform40
-    400304: transform41
-    400306: transform5
-    400308: transform6
-    400310: transform7
-    400312: transform8
-    400314: transform9
-    400316: //RootNode
-    400318: pCylinder89
-    2300000: pCube20
-    2300002: pCube21
-    2300004: pCube23
-    2300006: pCube24
-    2300008: pCube25
-    2300010: pCube26
-    2300012: pCube27
-    2300014: pCube4
-    2300016: pCube5
-    2300018: pCube9
-    2300020: pCylinder1
-    2300022: pCylinder2
-    2300024: pCylinder23
-    2300026: pCylinder23 1
-    2300028: pCylinder5
-    2300030: pCylinder62
-    2300032: pCylinder65
-    2300034: pCylinder68
-    2300036: pCylinder69
-    2300038: pCylinder76
-    2300040: pCylinder77
-    2300042: pCylinder78
-    2300044: pCylinder79
-    2300046: pCylinder79 1
-    2300048: pCylinder80
-    2300050: pCylinder80 1
-    2300052: pCylinder81
-    2300054: pCylinder81 1
-    2300056: pCylinder82
-    2300058: pCylinder82 1
-    2300060: pCylinder83
-    2300062: pCylinder83 1
-    2300064: pCylinder84
-    2300066: pCylinder84 1
-    2300068: pCylinder85
-    2300070: pCylinder85 1
-    2300072: pCylinder86
-    2300074: pCylinder86 1
-    2300076: pCylinder87
-    2300078: pCylinder87 1
-    2300080: pCylinder88
-    2300082: pCylinder88 1
-    2300084: polySurface1
-    2300086: polySurface2
-    2300088: pTorus2
-    2300090: pTorus5
-    2300092: pCylinder89
-    3300000: pCube20
-    3300002: pCube21
-    3300004: pCube23
-    3300006: pCube24
-    3300008: pCube25
-    3300010: pCube26
-    3300012: pCube27
-    3300014: pCube4
-    3300016: pCube5
-    3300018: pCube9
-    3300020: pCylinder1
-    3300022: pCylinder2
-    3300024: pCylinder23
-    3300026: pCylinder23 1
-    3300028: pCylinder5
-    3300030: pCylinder62
-    3300032: pCylinder65
-    3300034: pCylinder68
-    3300036: pCylinder69
-    3300038: pCylinder76
-    3300040: pCylinder77
-    3300042: pCylinder78
-    3300044: pCylinder79
-    3300046: pCylinder79 1
-    3300048: pCylinder80
-    3300050: pCylinder80 1
-    3300052: pCylinder81
-    3300054: pCylinder81 1
-    3300056: pCylinder82
-    3300058: pCylinder82 1
-    3300060: pCylinder83
-    3300062: pCylinder83 1
-    3300064: pCylinder84
-    3300066: pCylinder84 1
-    3300068: pCylinder85
-    3300070: pCylinder85 1
-    3300072: pCylinder86
-    3300074: pCylinder86 1
-    3300076: pCylinder87
-    3300078: pCylinder87 1
-    3300080: pCylinder88
-    3300082: pCylinder88 1
-    3300084: polySurface1
-    3300086: polySurface2
-    3300088: pTorus2
-    3300090: pTorus5
-    3300092: pCylinder89
+    400114: pCylinder20
+    400116: pCylinder21
+    400118: pCylinder22
+    400120: pCylinder23
+    400122: pCylinder23 1
+    400124: pCylinder3
+    400126: pCylinder4
+    400128: pCylinder5
+    400130: pCylinder54
+    400132: pCylinder55
+    400134: pCylinder56
+    400136: pCylinder57
+    400138: pCylinder58
+    400140: pCylinder59
+    400142: pCylinder6
+    400144: pCylinder62
+    400146: pCylinder63
+    400148: pCylinder64
+    400150: pCylinder65
+    400152: pCylinder66
+    400154: pCylinder67
+    400156: pCylinder68
+    400158: pCylinder69
+    400160: pCylinder70
+    400162: pCylinder71
+    400164: pCylinder72
+    400166: pCylinder73
+    400168: pCylinder74
+    400170: pCylinder75
+    400172: pCylinder76
+    400174: pCylinder77
+    400176: pCylinder78
+    400178: pCylinder79
+    400180: pCylinder79 1
+    400182: pCylinder80
+    400184: pCylinder80 1
+    400186: pCylinder81
+    400188: pCylinder81 1
+    400190: pCylinder82
+    400192: pCylinder82 1
+    400194: pCylinder83
+    400196: pCylinder83 1
+    400198: pCylinder84
+    400200: pCylinder84 1
+    400202: pCylinder85
+    400204: pCylinder85 1
+    400206: pCylinder86
+    400208: pCylinder86 1
+    400210: pCylinder87
+    400212: pCylinder87 1
+    400214: pCylinder88
+    400216: pCylinder88 1
+    400218: pCylinder89
+    400220: polySurface1
+    400222: polySurface2
+    400224: pTorus1
+    400226: pTorus4
+    400228: transform1
+    400230: transform10
+    400232: transform11
+    400234: transform12
+    400236: transform13
+    400238: transform14
+    400240: transform15
+    400242: transform16
+    400244: transform17
+    400246: transform18
+    400248: transform19
+    400250: transform2
+    400252: transform20
+    400254: transform21
+    400256: transform22
+    400258: transform23
+    400260: transform24
+    400262: transform25
+    400264: transform26
+    400266: transform27
+    400268: transform28
+    400270: transform29
+    400272: transform3
+    400274: transform30
+    400276: transform31
+    400278: transform32
+    400280: transform33
+    400282: transform34
+    400284: transform35
+    400286: transform36
+    400288: transform37
+    400290: transform38
+    400292: transform39
+    400294: transform4
+    400296: transform40
+    400298: transform41
+    400300: transform5
+    400302: transform6
+    400304: transform7
+    400306: transform8
+    400308: transform9
+    400310: //RootNode
     4300000: pCube5
     4300002: pCylinder62
     4300004: pCylinder1
@@ -461,174 +359,56 @@ ModelImporter:
     4300078: pCylinder81
     4300080: pCylinder23
     4300082: pCylinder84
-    4300084: pCylinder2
-    4300086: pTorus2
-    4300088: pTorus5
-    4300090: pCylinder65
-    4300092: pCylinder89
+    4300084: pCylinder89
     7400000: idle
-    7400002: run
-    7400004: walk
-    7400006: idle //// nurbsCircle7
-    7400008: run //// nurbsCircle7
-    7400010: walk //// nurbsCircle7
+    7400002: walk
+    7400004: run
+    7400006: death
+    7400008: deathidle
     9500000: //RootNode
-    11100000: //RootNode
-    11100002: group10
-    11100004: group11
-    11100006: group8
-    11100008: joint1
-    11100010: joint14
-    11100012: joint15
-    11100014: joint16
-    11100016: joint17
-    11100018: joint18
-    11100020: joint19
-    11100022: joint2
-    11100024: joint20
-    11100026: joint21
-    11100028: joint22
-    11100030: joint23
-    11100032: joint24
-    11100034: joint25
-    11100036: joint26
-    11100038: joint28
-    11100040: joint3
-    11100042: joint4
-    11100044: joint5
-    11100046: joint5 1
-    11100048: joint5 2
-    11100050: joint6
-    11100052: joint6 1
-    11100054: joint6 2
-    11100056: joint7
-    11100058: joint8
-    11100060: nurbsCircle7
-    11100062: nurbsCircle8
-    11100064: pCube1
-    11100066: pCube12
-    11100068: pCube15
-    11100070: pCube16
-    11100072: pCube17
-    11100074: pCube2
-    11100076: pCube20
-    11100078: pCube21
-    11100080: pCube22
-    11100082: pCube23
-    11100084: pCube24
-    11100086: pCube25
-    11100088: pCube26
-    11100090: pCube27
-    11100092: pCube4
-    11100094: pCube5
-    11100096: pCube6
-    11100098: pCube7
-    11100100: pCube8
-    11100102: pCube9
-    11100104: pCylinder1
-    11100106: pCylinder13
-    11100108: pCylinder16
-    11100110: pCylinder17
-    11100112: pCylinder18
-    11100114: pCylinder19
-    11100116: pCylinder20
-    11100118: pCylinder21
-    11100120: pCylinder22
-    11100122: pCylinder23
-    11100124: pCylinder23 1
-    11100126: pCylinder3
-    11100128: pCylinder4
-    11100130: pCylinder5
-    11100132: pCylinder54
-    11100134: pCylinder55
-    11100136: pCylinder56
-    11100138: pCylinder57
-    11100140: pCylinder58
-    11100142: pCylinder59
-    11100144: pCylinder6
-    11100146: pCylinder62
-    11100148: pCylinder63
-    11100150: pCylinder64
-    11100152: pCylinder65
-    11100154: pCylinder66
-    11100156: pCylinder67
-    11100158: pCylinder68
-    11100160: pCylinder69
-    11100162: pCylinder70
-    11100164: pCylinder71
-    11100166: pCylinder72
-    11100168: pCylinder73
-    11100170: pCylinder74
-    11100172: pCylinder75
-    11100174: pCylinder76
-    11100176: pCylinder77
-    11100178: pCylinder78
-    11100180: pCylinder79
-    11100182: pCylinder79 1
-    11100184: pCylinder80
-    11100186: pCylinder80 1
-    11100188: pCylinder81
-    11100190: pCylinder81 1
-    11100192: pCylinder82
-    11100194: pCylinder82 1
-    11100196: pCylinder83
-    11100198: pCylinder83 1
-    11100200: pCylinder84
-    11100202: pCylinder84 1
-    11100204: pCylinder85
-    11100206: pCylinder85 1
-    11100208: pCylinder86
-    11100210: pCylinder86 1
-    11100212: pCylinder87
-    11100214: pCylinder87 1
-    11100216: pCylinder88
-    11100218: pCylinder88 1
-    11100220: pCylinder89
-    11100222: polySurface1
-    11100224: polySurface2
-    11100226: pTorus1
-    11100228: pTorus4
-    11100230: transform1
-    11100232: transform10
-    11100234: transform11
-    11100236: transform12
-    11100238: transform13
-    11100240: transform14
-    11100242: transform15
-    11100244: transform16
-    11100246: transform17
-    11100248: transform18
-    11100250: transform19
-    11100252: transform2
-    11100254: transform20
-    11100256: transform21
-    11100258: transform22
-    11100260: transform23
-    11100262: transform24
-    11100264: transform25
-    11100266: transform26
-    11100268: transform27
-    11100270: transform28
-    11100272: transform29
-    11100274: transform3
-    11100276: transform30
-    11100278: transform31
-    11100280: transform32
-    11100282: transform33
-    11100284: transform34
-    11100286: transform35
-    11100288: transform36
-    11100290: transform37
-    11100292: transform38
-    11100294: transform39
-    11100296: transform4
-    11100298: transform40
-    11100300: transform41
-    11100302: transform5
-    11100304: transform6
-    11100306: transform7
-    11100308: transform8
-    11100310: transform9
+    13700000: pCube20
+    13700002: pCube21
+    13700004: pCube23
+    13700006: pCube24
+    13700008: pCube25
+    13700010: pCube26
+    13700012: pCube27
+    13700014: pCube4
+    13700016: pCube5
+    13700018: pCube9
+    13700020: pCylinder1
+    13700022: pCylinder23
+    13700024: pCylinder23 1
+    13700026: pCylinder5
+    13700028: pCylinder62
+    13700030: pCylinder68
+    13700032: pCylinder69
+    13700034: pCylinder76
+    13700036: pCylinder77
+    13700038: pCylinder78
+    13700040: pCylinder79
+    13700042: pCylinder79 1
+    13700044: pCylinder80
+    13700046: pCylinder80 1
+    13700048: pCylinder81
+    13700050: pCylinder81 1
+    13700052: pCylinder82
+    13700054: pCylinder82 1
+    13700056: pCylinder83
+    13700058: pCylinder83 1
+    13700060: pCylinder84
+    13700062: pCylinder84 1
+    13700064: pCylinder85
+    13700066: pCylinder85 1
+    13700068: pCylinder86
+    13700070: pCylinder86 1
+    13700072: pCylinder87
+    13700074: pCylinder87 1
+    13700076: pCylinder88
+    13700078: pCylinder88 1
+    13700080: pCylinder89
+    13700082: polySurface1
+    13700084: polySurface2
   materials:
     importMaterials: 1
     materialName: 0
@@ -647,7 +427,7 @@ ModelImporter:
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
-    animationWrapMode: 2
+    animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
@@ -659,9 +439,9 @@ ModelImporter:
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
-      loop: 1
+      loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -1003,9 +783,9 @@ ModelImporter:
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
-      loop: 1
+      loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -1347,9 +1127,697 @@ ModelImporter:
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
-      loop: 1
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group8
+        weight: 1
+      - path: group8/group10
+        weight: 1
+      - path: group8/group10/pCylinder23
+        weight: 1
+      - path: group8/group10/pCylinder79
+        weight: 1
+      - path: group8/group10/pCylinder80
+        weight: 1
+      - path: group8/group10/pCylinder81
+        weight: 1
+      - path: group8/group10/pCylinder82
+        weight: 1
+      - path: group8/group10/pCylinder83
+        weight: 1
+      - path: group8/group10/pCylinder84
+        weight: 1
+      - path: group8/group10/pCylinder85
+        weight: 1
+      - path: group8/group10/pCylinder86
+        weight: 1
+      - path: group8/group10/pCylinder87
+        weight: 1
+      - path: group8/group10/pCylinder88
+        weight: 1
+      - path: group8/group11
+        weight: 1
+      - path: group8/group11/pCylinder23 1
+        weight: 1
+      - path: group8/group11/pCylinder79 1
+        weight: 1
+      - path: group8/group11/pCylinder80 1
+        weight: 1
+      - path: group8/group11/pCylinder81 1
+        weight: 1
+      - path: group8/group11/pCylinder82 1
+        weight: 1
+      - path: group8/group11/pCylinder83 1
+        weight: 1
+      - path: group8/group11/pCylinder84 1
+        weight: 1
+      - path: group8/group11/pCylinder85 1
+        weight: 1
+      - path: group8/group11/pCylinder86 1
+        weight: 1
+      - path: group8/group11/pCylinder87 1
+        weight: 1
+      - path: group8/group11/pCylinder88 1
+        weight: 1
+      - path: group8/pCube2
+        weight: 1
+      - path: group8/pCube2/pCube15
+        weight: 1
+      - path: group8/pCube2/pCube15/transform22
+        weight: 1
+      - path: group8/pCube2/pCube22
+        weight: 1
+      - path: group8/pCube2/pCube22/transform23
+        weight: 1
+      - path: group8/pCube2/transform21
+        weight: 1
+      - path: group8/pCube4
+        weight: 1
+      - path: group8/pCube5
+        weight: 1
+      - path: group8/pCube9
+        weight: 1
+      - path: group8/pCube12
+        weight: 1
+      - path: group8/pCube12/transform31
+        weight: 1
+      - path: group8/pCube16
+        weight: 1
+      - path: group8/pCube16/transform26
+        weight: 1
+      - path: group8/pCube17
+        weight: 1
+      - path: group8/pCube17/transform36
+        weight: 1
+      - path: group8/pCube20
+        weight: 1
+      - path: group8/pCube21
+        weight: 1
+      - path: group8/pCube23
+        weight: 1
+      - path: group8/pCube24
+        weight: 1
+      - path: group8/pCube25
+        weight: 1
+      - path: group8/pCube26
+        weight: 1
+      - path: group8/pCube27
+        weight: 1
+      - path: group8/pCylinder1
+        weight: 1
+      - path: group8/pCylinder3
+        weight: 1
+      - path: group8/pCylinder3/transform40
+        weight: 1
+      - path: group8/pCylinder4
+        weight: 1
+      - path: group8/pCylinder4/transform27
+        weight: 1
+      - path: group8/pCylinder5
+        weight: 1
+      - path: group8/pCylinder6
+        weight: 1
+      - path: group8/pCylinder6/transform35
+        weight: 1
+      - path: group8/pCylinder13
+        weight: 1
+      - path: group8/pCylinder13/transform37
+        weight: 1
+      - path: group8/pCylinder16
+        weight: 1
+      - path: group8/pCylinder16/transform39
+        weight: 1
+      - path: group8/pCylinder17
+        weight: 1
+      - path: group8/pCylinder17/transform18
+        weight: 1
+      - path: group8/pCylinder18
+        weight: 1
+      - path: group8/pCylinder18/transform20
+        weight: 1
+      - path: group8/pCylinder19
+        weight: 1
+      - path: group8/pCylinder19/transform19
+        weight: 1
+      - path: group8/pCylinder20
+        weight: 1
+      - path: group8/pCylinder20/transform25
+        weight: 1
+      - path: group8/pCylinder21
+        weight: 1
+      - path: group8/pCylinder21/transform24
+        weight: 1
+      - path: group8/pCylinder22
+        weight: 1
+      - path: group8/pCylinder22/transform12
+        weight: 1
+      - path: group8/pCylinder54
+        weight: 1
+      - path: group8/pCylinder54/transform28
+        weight: 1
+      - path: group8/pCylinder55
+        weight: 1
+      - path: group8/pCylinder55/transform29
+        weight: 1
+      - path: group8/pCylinder56
+        weight: 1
+      - path: group8/pCylinder56/transform30
+        weight: 1
+      - path: group8/pCylinder57
+        weight: 1
+      - path: group8/pCylinder57/transform10
+        weight: 1
+      - path: group8/pCylinder58
+        weight: 1
+      - path: group8/pCylinder58/transform9
+        weight: 1
+      - path: group8/pCylinder59
+        weight: 1
+      - path: group8/pCylinder59/transform15
+        weight: 1
+      - path: group8/pCylinder62
+        weight: 1
+      - path: group8/pCylinder63
+        weight: 1
+      - path: group8/pCylinder63/transform11
+        weight: 1
+      - path: group8/pCylinder64
+        weight: 1
+      - path: group8/pCylinder64/transform34
+        weight: 1
+      - path: group8/pCylinder65
+        weight: 1
+      - path: group8/pCylinder65/transform41
+        weight: 1
+      - path: group8/pCylinder66
+        weight: 1
+      - path: group8/pCylinder66/transform33
+        weight: 1
+      - path: group8/pCylinder67
+        weight: 1
+      - path: group8/pCylinder67/transform32
+        weight: 1
+      - path: group8/pCylinder68
+        weight: 1
+      - path: group8/pCylinder69
+        weight: 1
+      - path: group8/pCylinder70
+        weight: 1
+      - path: group8/pCylinder70/transform16
+        weight: 1
+      - path: group8/pCylinder71
+        weight: 1
+      - path: group8/pCylinder71/transform17
+        weight: 1
+      - path: group8/pCylinder72
+        weight: 1
+      - path: group8/pCylinder72/transform14
+        weight: 1
+      - path: group8/pCylinder73
+        weight: 1
+      - path: group8/pCylinder73/transform7
+        weight: 1
+      - path: group8/pCylinder74
+        weight: 1
+      - path: group8/pCylinder74/transform8
+        weight: 1
+      - path: group8/pCylinder75
+        weight: 1
+      - path: group8/pCylinder75/transform13
+        weight: 1
+      - path: group8/pCylinder76
+        weight: 1
+      - path: group8/pCylinder77
+        weight: 1
+      - path: group8/pCylinder78
+        weight: 1
+      - path: group8/pCylinder89
+        weight: 1
+      - path: group8/polySurface1
+        weight: 1
+      - path: group8/polySurface2
+        weight: 1
+      - path: group8/pTorus4
+        weight: 1
+      - path: group8/pTorus4/transform38
+        weight: 1
+      - path: nurbsCircle7
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint14
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint14/joint28
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2/joint3
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2/joint3/joint4
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2/joint3/joint7
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2/joint3/joint7/joint5
+          1
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2/joint3/joint7/joint5
+          1/joint6 1
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2/joint3/joint8
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2/joint3/joint8/joint5
+          2
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2/joint3/joint8/joint5
+          2/joint6 2
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15/joint16
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15/joint16/joint17
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15/joint16/joint17/joint18
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15/joint16/joint17/joint18/joint19
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15/joint16/joint20
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15/joint16/joint20/joint21
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15/joint16/joint20/joint21/joint22
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15/joint16/joint23
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15/joint16/joint23/joint24
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15/joint16/joint23/joint24/joint25
+        weight: 1
+      - path: pCube1
+        weight: 1
+      - path: pCube1/transform2
+        weight: 1
+      - path: pCube6
+        weight: 1
+      - path: pCube6/transform3
+        weight: 1
+      - path: pCube7
+        weight: 1
+      - path: pCube7/transform4
+        weight: 1
+      - path: pCube8
+        weight: 1
+      - path: pCube8/transform5
+        weight: 1
+      - path: pTorus1
+        weight: 1
+      - path: pTorus1/transform1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: death
+      takeName: Take 001
+      firstFrame: 61
+      lastFrame: 110
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: group8
+        weight: 1
+      - path: group8/group10
+        weight: 1
+      - path: group8/group10/pCylinder23
+        weight: 1
+      - path: group8/group10/pCylinder79
+        weight: 1
+      - path: group8/group10/pCylinder80
+        weight: 1
+      - path: group8/group10/pCylinder81
+        weight: 1
+      - path: group8/group10/pCylinder82
+        weight: 1
+      - path: group8/group10/pCylinder83
+        weight: 1
+      - path: group8/group10/pCylinder84
+        weight: 1
+      - path: group8/group10/pCylinder85
+        weight: 1
+      - path: group8/group10/pCylinder86
+        weight: 1
+      - path: group8/group10/pCylinder87
+        weight: 1
+      - path: group8/group10/pCylinder88
+        weight: 1
+      - path: group8/group11
+        weight: 1
+      - path: group8/group11/pCylinder23 1
+        weight: 1
+      - path: group8/group11/pCylinder79 1
+        weight: 1
+      - path: group8/group11/pCylinder80 1
+        weight: 1
+      - path: group8/group11/pCylinder81 1
+        weight: 1
+      - path: group8/group11/pCylinder82 1
+        weight: 1
+      - path: group8/group11/pCylinder83 1
+        weight: 1
+      - path: group8/group11/pCylinder84 1
+        weight: 1
+      - path: group8/group11/pCylinder85 1
+        weight: 1
+      - path: group8/group11/pCylinder86 1
+        weight: 1
+      - path: group8/group11/pCylinder87 1
+        weight: 1
+      - path: group8/group11/pCylinder88 1
+        weight: 1
+      - path: group8/pCube2
+        weight: 1
+      - path: group8/pCube2/pCube15
+        weight: 1
+      - path: group8/pCube2/pCube15/transform22
+        weight: 1
+      - path: group8/pCube2/pCube22
+        weight: 1
+      - path: group8/pCube2/pCube22/transform23
+        weight: 1
+      - path: group8/pCube2/transform21
+        weight: 1
+      - path: group8/pCube4
+        weight: 1
+      - path: group8/pCube5
+        weight: 1
+      - path: group8/pCube9
+        weight: 1
+      - path: group8/pCube12
+        weight: 1
+      - path: group8/pCube12/transform31
+        weight: 1
+      - path: group8/pCube16
+        weight: 1
+      - path: group8/pCube16/transform26
+        weight: 1
+      - path: group8/pCube17
+        weight: 1
+      - path: group8/pCube17/transform36
+        weight: 1
+      - path: group8/pCube20
+        weight: 1
+      - path: group8/pCube21
+        weight: 1
+      - path: group8/pCube23
+        weight: 1
+      - path: group8/pCube24
+        weight: 1
+      - path: group8/pCube25
+        weight: 1
+      - path: group8/pCube26
+        weight: 1
+      - path: group8/pCube27
+        weight: 1
+      - path: group8/pCylinder1
+        weight: 1
+      - path: group8/pCylinder3
+        weight: 1
+      - path: group8/pCylinder3/transform40
+        weight: 1
+      - path: group8/pCylinder4
+        weight: 1
+      - path: group8/pCylinder4/transform27
+        weight: 1
+      - path: group8/pCylinder5
+        weight: 1
+      - path: group8/pCylinder6
+        weight: 1
+      - path: group8/pCylinder6/transform35
+        weight: 1
+      - path: group8/pCylinder13
+        weight: 1
+      - path: group8/pCylinder13/transform37
+        weight: 1
+      - path: group8/pCylinder16
+        weight: 1
+      - path: group8/pCylinder16/transform39
+        weight: 1
+      - path: group8/pCylinder17
+        weight: 1
+      - path: group8/pCylinder17/transform18
+        weight: 1
+      - path: group8/pCylinder18
+        weight: 1
+      - path: group8/pCylinder18/transform20
+        weight: 1
+      - path: group8/pCylinder19
+        weight: 1
+      - path: group8/pCylinder19/transform19
+        weight: 1
+      - path: group8/pCylinder20
+        weight: 1
+      - path: group8/pCylinder20/transform25
+        weight: 1
+      - path: group8/pCylinder21
+        weight: 1
+      - path: group8/pCylinder21/transform24
+        weight: 1
+      - path: group8/pCylinder22
+        weight: 1
+      - path: group8/pCylinder22/transform12
+        weight: 1
+      - path: group8/pCylinder54
+        weight: 1
+      - path: group8/pCylinder54/transform28
+        weight: 1
+      - path: group8/pCylinder55
+        weight: 1
+      - path: group8/pCylinder55/transform29
+        weight: 1
+      - path: group8/pCylinder56
+        weight: 1
+      - path: group8/pCylinder56/transform30
+        weight: 1
+      - path: group8/pCylinder57
+        weight: 1
+      - path: group8/pCylinder57/transform10
+        weight: 1
+      - path: group8/pCylinder58
+        weight: 1
+      - path: group8/pCylinder58/transform9
+        weight: 1
+      - path: group8/pCylinder59
+        weight: 1
+      - path: group8/pCylinder59/transform15
+        weight: 1
+      - path: group8/pCylinder62
+        weight: 1
+      - path: group8/pCylinder63
+        weight: 1
+      - path: group8/pCylinder63/transform11
+        weight: 1
+      - path: group8/pCylinder64
+        weight: 1
+      - path: group8/pCylinder64/transform34
+        weight: 1
+      - path: group8/pCylinder65
+        weight: 1
+      - path: group8/pCylinder65/transform41
+        weight: 1
+      - path: group8/pCylinder66
+        weight: 1
+      - path: group8/pCylinder66/transform33
+        weight: 1
+      - path: group8/pCylinder67
+        weight: 1
+      - path: group8/pCylinder67/transform32
+        weight: 1
+      - path: group8/pCylinder68
+        weight: 1
+      - path: group8/pCylinder69
+        weight: 1
+      - path: group8/pCylinder70
+        weight: 1
+      - path: group8/pCylinder70/transform16
+        weight: 1
+      - path: group8/pCylinder71
+        weight: 1
+      - path: group8/pCylinder71/transform17
+        weight: 1
+      - path: group8/pCylinder72
+        weight: 1
+      - path: group8/pCylinder72/transform14
+        weight: 1
+      - path: group8/pCylinder73
+        weight: 1
+      - path: group8/pCylinder73/transform7
+        weight: 1
+      - path: group8/pCylinder74
+        weight: 1
+      - path: group8/pCylinder74/transform8
+        weight: 1
+      - path: group8/pCylinder75
+        weight: 1
+      - path: group8/pCylinder75/transform13
+        weight: 1
+      - path: group8/pCylinder76
+        weight: 1
+      - path: group8/pCylinder77
+        weight: 1
+      - path: group8/pCylinder78
+        weight: 1
+      - path: group8/pCylinder89
+        weight: 1
+      - path: group8/polySurface1
+        weight: 1
+      - path: group8/polySurface2
+        weight: 1
+      - path: group8/pTorus4
+        weight: 1
+      - path: group8/pTorus4/transform38
+        weight: 1
+      - path: nurbsCircle7
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint14
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint14/joint28
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2/joint3
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2/joint3/joint4
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2/joint3/joint7
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2/joint3/joint7/joint5
+          1
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2/joint3/joint7/joint5
+          1/joint6 1
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2/joint3/joint8
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2/joint3/joint8/joint5
+          2
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint2/joint3/joint8/joint5
+          2/joint6 2
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15/joint16
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15/joint16/joint17
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15/joint16/joint17/joint18
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15/joint16/joint17/joint18/joint19
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15/joint16/joint20
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15/joint16/joint20/joint21
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15/joint16/joint20/joint21/joint22
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15/joint16/joint23
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15/joint16/joint23/joint24
+        weight: 1
+      - path: nurbsCircle7/nurbsCircle8/transform6/joint1/joint26/joint15/joint16/joint23/joint24/joint25
+        weight: 1
+      - path: pCube1
+        weight: 1
+      - path: pCube1/transform2
+        weight: 1
+      - path: pCube6
+        weight: 1
+      - path: pCube6/transform3
+        weight: 1
+      - path: pCube7
+        weight: 1
+      - path: pCube7/transform4
+        weight: 1
+      - path: pCube8
+        weight: 1
+      - path: pCube8/transform5
+        weight: 1
+      - path: pTorus1
+        weight: 1
+      - path: pTorus1/transform1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: deathidle
+      takeName: Take 001
+      firstFrame: 109
+      lastFrame: 110
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -1717,13 +2185,13 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName: nurbsCircle7
+    rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
