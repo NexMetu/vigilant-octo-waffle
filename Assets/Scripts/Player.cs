@@ -8,10 +8,18 @@ public class Player : MonoBehaviour {
 	public float bodyRotateSpeed = 1.0f;
 	public float headRotateSpeed = 1.0f;
 
-	public float health = 100;
+	//player ui elements
+	public GameObject healthbar;
+	public GameObject enegrybar;
+	public GameObject sonicweapon;
+	public GameObject laserweapon;
+
+	public float maxHealth;
+	public float health;
 	public int armour = 10;
 	public int ammo = 10;
-	public int energy = 10;
+	public float maxEnergy;
+	public float energy = 10;
 	//Attributes for firing
 	public float coolDownPeriodInSeconds;
 	public float timeStamp;
@@ -32,6 +40,9 @@ public class Player : MonoBehaviour {
 	}
 
 	void Update () {
+		setHealthBar ();
+		setEnegrybar ();
+		setWeaponImange ();
 		
 	}
 
@@ -129,6 +140,39 @@ public class Player : MonoBehaviour {
 		}
 	}
 
+	void setHealthBar(){
+		var healthscale = health/maxHealth;
+		if (healthscale < 0) {
+			healthscale = 0;
+		} else if (healthscale > 1) {
+			healthscale = 1;
+		}
+		healthbar.transform.localScale = new Vector3 (healthscale, healthbar.transform.localScale.y, healthbar.transform.localScale.z);	
+	}
+
+	void setEnegrybar (){
+
+		var energyscale = energy/maxEnergy;
+		if (energyscale < 0) {
+			energyscale = 0;
+		} else if (energyscale > 1) {
+			energyscale = 1;
+		}
+		enegrybar.transform.localScale = new Vector3 (energyscale, enegrybar.transform.localScale.y, enegrybar.transform.localScale.z);
+
+	}
+
+	void setWeaponImange(){
+		if (weapon.staticLength) {
+			laserweapon.gameObject.SetActive (true);
+			sonicweapon.gameObject.SetActive (false);
+		} else {
+			laserweapon.gameObject.SetActive (false);
+			sonicweapon.gameObject.SetActive (true);
+		}
+
+	}
+
 	public void TakeDamage(int damage) {
 		health -= damage;
 		//TODO: handle health<=0 -> dying / game over
@@ -138,3 +182,4 @@ public class Player : MonoBehaviour {
 		return health <= 0;
 	}
 }
+
